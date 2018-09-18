@@ -1,0 +1,98 @@
+body {
+    background-color: #104e8b;
+}
+
+#gamePanel {
+    align-items: center;
+    text-align: center;
+    margin: 20px auto;
+}
+
+#title {
+    font-size: 40px;
+    font-family: 'Michroma', 'Arial Black';
+    align-items: center;
+    text-align: center;
+    color: #eec900;
+}
+
+#controllPanel {
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+    height:50px;
+    display: block;
+}
+
+#hintPanel {
+    background-color: #eec900;
+    border-radius: 25px;
+    align-items: center;
+    text-align: center;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    width: 350px;
+    height: 80px;
+    display: block;
+    margin: 10px auto;
+}
+
+
+canvas {
+    margin: auto;
+    display: block;
+    border: 30px solid #363636;
+}
+
+#newGameBtn {
+    margin: 0 auto;
+    border-radius: 3px;
+    border: none;
+    font-family: 'Michroma', 'Arial Black';
+    font-size: 16px;
+    color: white;
+    transition: all 0.1s;
+    -webkit-transition: all 0.1s;
+    background-color: #E74C3C;
+    border-bottom: 5px solid #BD3E31;
+    text-shadow: 0px -2px #BD3E31;
+}
+
+#newGameBtn:active {
+    transform: translate(0px,5px);
+    -webkit-transform: translate(0px,5px);
+    border-bottom: none;
+}
+
+.gameBtnTitle {
+    text-align: center;
+    margin-bottom: 5px;
+    font-family: 'Michroma', 'Arial Black';
+}
+
+.gameBtn {
+    margin: none;
+    background-color: black;
+    display: inline-block;
+    text-align: center;
+    color:white;
+    width: 15px;
+    border-radius: 8px;
+    padding-left: 6px;
+    padding-right: 6px;
+}
+
+.hintMsg {
+    margin-top: 10px;
+    font-family: 'Michroma', 'Arial Black';
+    font-weight: bold;
+    font-size: 12px;
+    color: #8b0000;
+}
+
+.gameBtnSpace {
+    width: auto;
+}
