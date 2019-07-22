@@ -22,16 +22,19 @@
     "typescript": "^3.5.3"
   },
   "devDependencies": {
-    "prettier": "^1.18.2"
+    "prettier": "^1.18.2",
+    "stylelint": "^10.1.0",
+    "stylelint-config-standard": "^18.3.0"
   },
   "keywords": [],
   "scripts": {
-    "build": "gatsby build",
+    "build": "npm lintcss && gatsby build",
     "develop": "gatsby develop",
     "format": "prettier --write src/**/*.{js,jsx}",
     "start": "npm run develop",
     "serve": "gatsby serve",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\""
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\"",
+    "lintcss": "./node_modules/stylelint/bin/stylelint.js ./src/sass/**/*.scss"
   },
   "repository": {
     "type": "git",
