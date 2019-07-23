@@ -22,19 +22,26 @@
     "typescript": "^3.5.3"
   },
   "devDependencies": {
+    "eslint": "^5.16.0",
+    "eslint-config-airbnb": "^17.1.1",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-react": "^7.14.3",
     "prettier": "^1.18.2",
     "stylelint": "^10.1.0",
     "stylelint-config-standard": "^18.3.0"
   },
   "keywords": [],
   "scripts": {
-    "build": "npm lintcss && gatsby build",
+    "build": "npm run lint && gatsby build",
     "develop": "gatsby develop",
     "format": "prettier --write src/**/*.{js,jsx}",
     "start": "npm run develop",
     "serve": "gatsby serve",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\"",
-    "lintcss": "./node_modules/stylelint/bin/stylelint.js ./src/sass/**/*.scss"
+    "lint": "npm run lintcss && npm run lintjs",
+    "lintcss": "./node_modules/stylelint/bin/stylelint.js ./src/sass/**/*.scss",
+    "lintjs": "./node_modules/.bin/eslint ./src/**/*.js"
   },
   "repository": {
     "type": "git",
